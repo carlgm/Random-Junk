@@ -15,7 +15,7 @@
    limitations under the License.
 */
 if (empty($_POST[username]) || empty($_POST[password])) {
-echo <<< HTML
+echo << HTML
 <html>
 <head>
 <title>Generate your .htpasswd user/pass login</title>
@@ -53,8 +53,26 @@ HTML;
    default:
     $encrypted_password = '{SHA}'.base64_encode(sha1($password, TRUE));
    break;
-  }   
+  }
+echo << HTML
+<html>
+<head>
+<title>Generatated .htpasswd user/pass logins</title>
+<style type="text/css">
+.txtbrd {
+border: 1px solid #000000; padding: 2px;
+}
+</style>
+</head>
+<body>
+<span class=txtbrd>
+HTML; 
  echo "Here is the .htpasswd line <br />";
  echo $_POST[username].":".$encrypted_password."<br />"; 
+echo << HTML
+</span>
+</body>
+</html>
+HTML; 
 }
 ?>
