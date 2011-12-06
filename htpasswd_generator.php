@@ -62,7 +62,6 @@ echo <<< HTML
 </style>
 </head>
 <body>
-<span class='txtbrd'>
 HTML;
  echo "Here is the .htpasswd line:<br />";
  echo $_POST[username].":".$encrypted_password."<br />"; 
