@@ -31,14 +31,14 @@ border: 1px solid #000000; padding: 2px;
 <div id='form' align='left'>
 <span class='txtbrd'> Username: <input type='text' name='username' size='30'></span><br /><br />
 <span class='txtbrd'> Password: <input type='text' name='password' size='30'></span><br /><br />
-<span class='txtbrd'>Encryption type: 
+<span class='txtbrd'>Encryption type:
 <select name='etype'>
 <option value='sha1'>SHA1 (default)</option>
 <option value='crypt'>Crypt</option>
 </select>
 </span>
 <br /><br />
-<input type=submit name=submit value=generate style=bold>
+<input type='submit' name='submit' value='generate' style='bold'>
 </div>
 </form>
 </body>
