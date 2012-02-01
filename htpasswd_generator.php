@@ -14,7 +14,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-if (empty($_POST[username]) || empty($_POST[password])) {
+if (empty($_POST['username']) || empty($_POST['password'])) {
 echo <<< HTML
 <html>
 <head>
@@ -64,7 +64,7 @@ echo <<< HTML
 <body>
 HTML;
  echo "Here is the .htpasswd line:<br />";
- echo $_POST[username].":".$encrypted_password."<br />"; 
+ echo $_POST['username'].":".$encrypted_password."<br />"; 
 echo <<< HTML
 </body>
 </html>
