@@ -15,7 +15,7 @@ fi
 if [ `pgrep -xc 'redshift'` -eq 0 ]
 then
 	notify-send -a redshift "redshift not detected, starting now."
-	redshift -l $LAT:LONG -o
+	redshift -l $LAT:$LONG -o
 else
 	notify-send -a redshift "redshift already running"
 fi
